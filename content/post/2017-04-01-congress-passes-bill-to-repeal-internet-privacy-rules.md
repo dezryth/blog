@@ -18,7 +18,7 @@ Now, from the surface, this may not sound like a big issue to you. Ad networks a
 
 With the [increasing number of breaches of private data][1] in recent years, do we really want more companies who definitely do NOT have a large enough information security budget to be holding on to sensitive data about us? I will continue to advocate for increased options for consumers to keep a short leash on their personal data. Also, here is your reminder that your political representatives do not always have your best interests in mind:
 
-![Vote Lobbying Data](/images/internet-privacy-resolution-vote-lobbying-data.png)
+![Vote Lobbying Data](/img/internet-privacy-resolution-vote-lobbying-data.png)
 
 [SOURCE: Center for Responsive Politics][2]
 

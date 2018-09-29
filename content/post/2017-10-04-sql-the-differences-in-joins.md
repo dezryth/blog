@@ -8,7 +8,7 @@ categories:
   - Technology
 tags:
   - SQL
-thumbnailImage: /images/LEFT-vs-Right-Outer-Join-in-SQL.png
+thumbnailImage: /img/LEFT-vs-Right-Outer-Join-in-SQL.png
 ---
 The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft's SQL Server. For the longest time I've hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.
 
@@ -26,4 +26,4 @@ Also, for the longest time, I solely relied on the LEFT (OUTER) JOIN. I would ha
 
 These are the most common joins you will see in database development. Depending on the results you are looking for, it's smart to get familiar with the different types as otherwise you'll be left with finding creative and inefficient ways to pull the same data. Below is a graphic utilizing Venn diagrams to further illustrate the concepts. Where INNER is not specified, it is assumed to be an OUTER join.
 
-![Joins](/images/LEFT-vs-Right-Outer-Join-in-SQL.png)
+![Joins](/img/LEFT-vs-Right-Outer-Join-in-SQL.png)

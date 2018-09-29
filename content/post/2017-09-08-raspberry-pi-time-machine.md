@@ -13,7 +13,7 @@ tags:
   - pi
   - raspberry-pi
   - time-machine
-thumbnailImage: /images/completedtimemachinesetup.png
+thumbnailImage: /img/completedtimemachinesetup.png
 ---
 # Raspberry Pi Time Machine
 
@@ -41,15 +41,15 @@ Format your external drive on your macOS machine to work with time machine.
 
 Launch disk utility. Select your drive. Give it a name and set the format to 'Mac OS Extended', and scheme to GUID Partition Map. Click Erase.
 
-![hfs1](/images/hfs1.png)
+![hfs1](/img/hfs1.png)
 
 Open finder and right click your drive. Select Get Info'.
 
-![hfs2](/images/hfs2.png)
+![hfs2](/img/hfs2.png)
 
 Set 'everyone' to 'Read & Write', and check 'Ignore ownership on this volume'
 
-![hfs3](/images/hfs3.png)
+![hfs3](/img/hfs3.png)
 
 Now unmount the drive and go plug it into your Raspberry Pi.
 
@@ -74,13 +74,13 @@ Configure Pi to mount drive on start up.
   
 Find your drives UUID (Universally Unique Identifier) with this command:
 
-![Finding UUID](/images/finding-uuid.png)  
+![Finding UUID](/img/finding-uuid.png)  
 
 Modify your fstab file to automatically mount your external drive on boot-up:
 
     sudo nano /etc/fstab
 
-![fstab](/images/fstab.png)
+![fstab](/img/fstab.png)
 
 The line you want to add will look like this. Feel free to copy, paste, and modify with your UUID.
 
@@ -143,7 +143,7 @@ To get your Time Machine drive to show up in Finder's sidebar you'll need to add
 
     mdns4 mdns
 
-![nsswitchconf](/images/nsswitchconf.png)
+![nsswitchconf](/img/nsswitchconf.png)
 
 Edit apfd.service
 
@@ -195,19 +195,19 @@ _We're almost done._
 
 Now hop on to your Mac and you should see your Pi under 'shared' inside of Finder.
 
-![finder1](/images/finder1.png)  
+![finder1](/img/finder1.png)  
 
 Hit 'Command + K' to connect to the server with your Pi's IP address (which you should have given a static IP from your router)
 
-![finder2](/images/finder2.png)  
+![finder2](/img/finder2.png)  
 
 Now go to System Preferences > Time Machine and select the drive as your Time Machine backup.
 
-![finder3](/images/finder3.png)
+![finder3](/img/finder3.png)
 
 And you're done!
 
-![Completed Time Machine Setup](/images/completedtimemachinesetup.png)
+![Completed Time Machine Setup](/img/completedtimemachinesetup.png)
 
 Now to get a bigger drive!
 

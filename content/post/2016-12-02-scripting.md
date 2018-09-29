@@ -12,7 +12,7 @@ Scripting languages and command line interfaces is an area I've decided to focus
 
 Over the weekend I decided to get a little more comfortable with the command line interface with my Mac. I decided to write a couple scripts that I'd find useful on a daily basis. I'd recently brought in the LCD display I use with my home PC to work as I realized I wasn't giving it the attention it deserved at home, but needed a way to remote in and control the PC in order to access Steam and wake the PC to run my Plex server. So I wrote two scripts:
 
-![Icons](/images/ScriptIcons.png)
+![Icons](/img/ScriptIcons.png)
 
 ## WakeUpHomePC.sh
 

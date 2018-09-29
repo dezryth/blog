@@ -12,31 +12,31 @@ categories:
 
 Here are a few pictures of where I am staying in Chiba City.
 
-![My Room](/images/IMG_0741.jpg)
+![My Room](/img/IMG_0741.jpg)
 
 Here is my room. It's small but really nice. You can't see it, but across the room from the dresser is a closet where the futon I sleep on at night is stored.
 
-![View down a street](/images/IMG_0748.jpg)
+![View down a street](/img/IMG_0748.jpg)
 
 Typical street in a japanese neighborhood. In Japan, they have more freedom on how they design their house and what they do with their area. Where as in America we have to stick to a set look depending on the neighborhood, or otherwise we get the home owners association on our backs.
 
 All the houses have the walls around them. Most all of the houses contain a garden with special trees, flowers etc. I saw many neighbors who also took care of bonsai trees.
 
-![Local Clinic](/images/IMG_0747.jpg)
+![Local Clinic](/img/IMG_0747.jpg)
 
 Here is the local clinic, which is about a minute walk away from the Takata's house.
 
 Chiba City is a very quiet city. Other than the occasional dog barking, ambulance sirens, and car passing by you do not hear very much. The Japanese may not be as social as Americans, but they respect each other's privacy a lot more. If someone in the neighborhood want's to put something unique in their yard, no one is going to get upset.
 
-![Local park](/images/IMG_0749.jpg)
+![Local park](/img/IMG_0749.jpg)
 
 This is a local park in the area. Swing set, play house with a slide, giant sand box. Your typical public playground area.
 
-![Tonkatsu!](/images/IMG_0743.jpg)
+![Tonkatsu!](/img/IMG_0743.jpg)
 
 Here is a close restaurant which serves tonkatsu (pork cutlet).
 
-![Gardens](/images/IMG_0746.jpg)
+![Gardens](/img/IMG_0746.jpg)
 
 Here are a bunch of gardens. These gardens are rented off by the owners of the land to locals who would like to have their own garden, raise some of their own crops etc. Although the owners could sell off the land, there are high taxes in the process and the locals enjoy being able to utilize this space for their gardening hobbies.
 

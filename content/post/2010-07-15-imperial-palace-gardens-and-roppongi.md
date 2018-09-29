@@ -21,6 +21,6 @@ Imperial Palace gardens. There were a lot of people just bumming around napping 
 ** Photoswipe album **
 
 Roppongi is basically the rich area of Tokyo. There were a lot of foreigners in this area. All the clothes shops were super expensive, and everyone had the latest fashion. Seems like right now for teenage-early twenties girls its black stockings with frayed super short jean shorts, and a long baggy t-shirt.
-![Basically This](/images/blue-shorts-white-shirt-black-blazer-black-tights-black-boots-black_400.jpg)  
+![Basically This](/img/blue-shorts-white-shirt-black-blazer-black-tights-black-boots-black_400.jpg)  
   
 Basically that. Except Asian, and pulling it off better.

@@ -6,10 +6,10 @@ date: 2017-04-01T23:29:40+00:00
 url: /2017/04/01/network-certification-and-resources/
 categories:
   - Technology
-thumbnailImage: /images/comptia_logo_white.png
+thumbnailImage: /img/comptia_logo_white.png
 ---
 I am currently training for the Network+ certification offered by [CompTia][1]. It's a vastly more interesting subject for me to review and familiarize myself with than A+ has been in the past. As for the moment I only have the money for one certification and I've decided to pursue this one first.
-![CompTia Certifications](/images/comptia_logo_white.png)
+![CompTia Certifications](/img/comptia_logo_white.png)
 
 [CompTia Certifications][2]
 

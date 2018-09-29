@@ -6,7 +6,7 @@ date: 2010-06-25T15:16:44+00:00
 url: /2010/06/25/the-takatas/
 categories:
   - Japan Trip 2010
-thumbnailImage: /images/masahiro-and-yuko-2.jpg
+thumbnailImage: /img/masahiro-and-yuko-2.jpg
 ---
 ## (The following post is from 2010. I imported my blog posts from my month long trip to Japan for posterity and to remember fondly!)
 
@@ -16,10 +16,10 @@ I am so thankful to them for everything they have done for me!
 
 Here they are:
 
-![Masahiro and Yuko](/images/masahiro-and-yuko-2.jpg)
+![Masahiro and Yuko](/img/masahiro-and-yuko-2.jpg)
 
 And for anyone who wanted to compare Mr. Takata vs. Mr. Miyagi:
 
-![Miyagi](/images/miyagi.jpg)
+![Miyagi](/img/miyagi.jpg)
 
 Mr. Takata is way cooler by far.

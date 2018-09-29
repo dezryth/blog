@@ -7,7 +7,7 @@ url: /2017/09/27/decred-cryptocurrency/
 categories:
   - Technology
 format: image
-thumbnailImage: /images/decred-come-and-stake-it.png
+thumbnailImage: /img/decred-come-and-stake-it.png
 ---
 Recently I've gotten more involved in the Decred community. I'll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I've seen in the space, and having spoken with members of the development team personally, they've got great backers and it's going to go far.
 
@@ -25,4 +25,4 @@ With Decred, something closer to true decentralization is less of a pipe dream. 
 
 Time will show how well received these concepts are, and for the moment Decred has flown relatively under the radar. Many other  coins are out their with a higher valuation  that offer less in the way of features as well as solid foundation, but in the end it's the market that determines where there is value or not. The cryptocurrency space is currently a sea of speculation, where most are in it to make a quick profit, but I believe eventually the dust will settle and investors will begin to take the technology more seriously and Decred will be seen as the serious player it is.
 
-![Come and Stake It](/images/decred-come-and-stake-it.png)
+![Come and Stake It](/img/decred-come-and-stake-it.png)
