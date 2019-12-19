@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Scott Christian"
-  bio = "Software Developer | .NET Business Apps | Infosec | ESFJ | [Decred Project Contributor](https://www.decred.org/contributors/)"
+  bio = "Software Developer | .NET Business Apps | Infosec | ESFJ | [Decred Project Contributor](https://decred.org/contributors/)"
   job = "Systems Software Engineer"
   location = "Plano, TX"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
