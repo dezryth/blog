@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Scott R Christian"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "scottrchristian-com"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-88698870-1"
 paginate = 7
 canonifyurls = true
 
