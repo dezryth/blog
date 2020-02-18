@@ -7,7 +7,6 @@ url: /2017/09/08/raspberry-pi-time-machine/
 categories:
   - Apple
   - Linux
-  - Technology
 tags:
   - macOS
   - pi
