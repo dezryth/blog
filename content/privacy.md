@@ -1,13 +1,14 @@
 ---
 title: CodeSilver Privacy Policy
 author: Scott
-type: post
+type: page
 date: 2020-02-17T21:30:00+00:00
-url: /privacy
+url: /privacy/
 categories:
-  - Decred
-thumbnailImage: /img/dcr-facebook.jpg
+  - Policy
+thumbnailImage: /img/privacypolicy.jpeg
 ---
+![Privacy Policy](/img/privacypolicy.jpeg)
 
-CodeSilver Google Chrome Extensions don't store any of your data.
+CodeSilver applications don't store any of your data.
 Period.
