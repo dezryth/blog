@@ -2,12 +2,14 @@
 title: This is a test
 author: Scott
 type: post
-date: 2024-05-30T00:59:13.486997
-url: /2024/05/30/this-is-a-test/
+date: 2024-05-30 00:59:13.486997
+url: /2025/06/19/this-is-a-test/
 categories:
   - Technology
-  - ChatGPT
-thumbnailImage: /img/chatgpt.png
+  - Chatgpt
+tags:
+  - 
+thumbnailImage: /img/ChatGPT-Logo.jpg
 ---
 It's late.
 And I haven't posted in years.
