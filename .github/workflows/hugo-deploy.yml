@@ -52,12 +52,13 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --destination docs \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./docs
 
   deploy:
     runs-on: ubuntu-latest
