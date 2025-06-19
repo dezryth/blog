@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Scott R Christian</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in Linux on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>
+    <atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up a Raspberry Pi 3 Time Machine!</title>
+      <link>/2017/09/08/raspberry-pi-time-machine/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      <guid>/2017/09/08/raspberry-pi-time-machine/</guid>
+      <description>Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &amp;lsquo;on the go&amp;rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.</description>
+    </item>
+  </channel>
+</rss>

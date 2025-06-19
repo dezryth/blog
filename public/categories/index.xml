@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Scott R Christian</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2025 11:34:56 +0000</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>/categories/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Development</title>
+      <link>/categories/mobile-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/mobile-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chatgpt</title>
+      <link>/categories/chatgpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>/categories/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Other</title>
+      <link>/categories/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/other/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decred</title>
+      <link>/categories/decred/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/decred/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Policy</title>
+      <link>/categories/policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/policy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple</title>
+      <link>/categories/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/apple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>/categories/politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/politics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Japan Trip 2010</title>
+      <link>/categories/japan-trip-2010/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/categories/japan-trip-2010/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

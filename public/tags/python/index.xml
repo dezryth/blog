@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Scott R Christian</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2025 11:34:56 +0000</lastBuildDate>
+    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Blog Post Generator Script</title>
+      <link>/2025/06/19/testing-blog-post-generator-script/</link>
+      <pubDate>Thu, 19 Jun 2025 11:34:56 +0000</pubDate>
+      <guid>/2025/06/19/testing-blog-post-generator-script/</guid>
+      <description>Testing my blog post generating tool again.&#xA;https://github.com/dezryth/misc-scripts&#xA;Testing hugo-deploy.yml</description>
+    </item>
+  </channel>
+</rss>

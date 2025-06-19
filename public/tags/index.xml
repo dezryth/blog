@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Scott R Christian</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2025 11:34:56 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>.Net Maui</title>
+      <link>/tags/.net-maui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/.net-maui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple</title>
+      <link>/tags/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/apple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>/tags/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacOS</title>
+      <link>/tags/macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pi</title>
+      <link>/tags/pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry-Pi</title>
+      <link>/tags/raspberry-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time-Machine</title>
+      <link>/tags/time-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/time-machine/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

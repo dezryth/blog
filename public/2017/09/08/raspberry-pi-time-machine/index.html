@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"\/",
+  "author": {
+    "@type": "Person",
+    "name": "Scott Christian",
+    
+    "image": "https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd"
+    
+  },
+  "name":"Scott R Christian",
+  "description":"Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when \u0026lsquo;on the go\u0026rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.",
+  "url":"\/2017\/09\/08\/raspberry-pi-time-machine\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.126.1 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Scott Christian">
+<meta name="keywords" content="">
+<meta name="description" content="Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+
+
+<meta property="og:description" content="Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set up a Raspberry Pi 3 Time Machine!">
+<meta name="twitter:title" content="Set up a Raspberry Pi 3 Time Machine!">
+<meta property="og:url" content="/2017/09/08/raspberry-pi-time-machine/">
+<meta property="twitter:url" content="/2017/09/08/raspberry-pi-time-machine/">
+<meta property="og:site_name" content="Scott R Christian">
+<meta property="og:description" content="Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta name="twitter:description" content="Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2017-09-09T04:17:55">
+  
+  
+    <meta property="article:modified_time" content="2017-09-09T04:17:55">
+  
+  
+  
+    
+      <meta property="article:section" content="Apple">
+    
+      <meta property="article:section" content="Linux">
+    
+  
+  
+    
+      <meta property="article:tag" content="macOS">
+    
+      <meta property="article:tag" content="pi">
+    
+      <meta property="article:tag" content="raspberry-pi">
+    
+      <meta property="article:tag" content="time-machine">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@scottrchristian">
+
+
+  <meta name="twitter:creator" content="@scottrchristian">
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=640">
+
+
+
+
+
+  <meta property="og:image" content="/img/completedtimemachinesetup.png">
+  <meta property="twitter:image" content="/img/completedtimemachinesetup.png">
+
+
+    <title>Set up a Raspberry Pi 3 Time Machine!</title>
+
+    <link rel="icon" href="/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="/2017/09/08/raspberry-pi-time-machine/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fas fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/" aria-label="Go to homepage">Scott R Christian</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about" aria-label="Open the link: /#about">
+    
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Scott Christian</h4>
+        
+          <h5 class="sidebar-profile-bio">Software Developer | Mobile Apps | Web Development</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/" title="Home">
+    
+      <i class="sidebar-button-icon far fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories" title="Categories">
+    
+      <i class="sidebar-button-icon far fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags" title="Tags">
+    
+      <i class="sidebar-button-icon far fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives" title="Archives">
+    
+      <i class="sidebar-button-icon far fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/#about" title="About">
+    
+      <i class="sidebar-button-icon far fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/dezryth" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/3403391/dezryth" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon far fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Set up a Raspberry Pi 3 Time Machine!
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2017-09-09T04:17:55Z">
+        
+  September 9, 2017
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/apple">Apple</a>, 
+    
+      <a class="category-link" href="/categories/linux">Linux</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="raspberry-pi-time-machine">Raspberry Pi Time Machine</h1>
+<p>This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario. Now, I could have just tossed it in my external enclosure and plugged it in every once in a while for backups, but I know I&rsquo;m too lazy to remember to do that often enough, and backing up wirelessly over the network is just so much more convenient and sounded like the kind of project I&rsquo;d have a little fun with. Below is how the process went. If you stumbled upon this, you should be able to follow along with a few possible differences depending on the model of Pi you have. Make sure to read the following before moving to the instructions, as you&rsquo;ll appreciate avoiding all the issues I ran into figuring this out. Thanks to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for getting me most of the way there.</p>
+<h2 id="requirements">Requirements</h2>
+<p>Raspberry Pi with Raspbian Jessie;</p>
+<p>** You may be able to get this to work with stretch with some modifications, but some of the commands in my instructions WILL NOT work in Raspbian stretch when installing Netatalk.</p>
+<p>External Drive</p>
+<p>SD/Micro SD Card and reader</p>
+<h2 id="instructions">Instructions</h2>
+<p>Install Raspbian Jessie Lite onto your PI. I recommend Win32 Disk Imager to write your image to your SD card if you have access to a Windows PC. Otherwise, google around for an equivalent for macOS.</p>
+<p><strong>! WAIT !</strong></p>
+<p>Before you go tuck your little headless computer away make sure to enable the SSH server. The SSH server is no longer enabled by default.</p>
+<p>Format your external drive on your macOS machine to work with time machine.</p>
+<p>Launch disk utility. Select your drive. Give it a name and set the format to &lsquo;Mac OS Extended&rsquo;, and scheme to GUID Partition Map. Click Erase.</p>
+<p><img src="/img/hfs1.png" alt="hfs1"></p>
+<p>Open finder and right click your drive. Select Get Info&rsquo;.</p>
+<p><img src="/img/hfs2.png" alt="hfs2"></p>
+<p>Set &rsquo;everyone&rsquo; to &lsquo;Read &amp; Write&rsquo;, and check &lsquo;Ignore ownership on this volume&rsquo;</p>
+<p><img src="/img/hfs3.png" alt="hfs3"></p>
+<p>Now unmount the drive and go plug it into your Raspberry Pi.</p>
+<p>Update your repositories and update your packages.</p>
+<pre><code>sudo apt-get update
+sudo apt-get upgrade
+</code></pre>
+<p>Install packages hfsprogs and hfsplus:</p>
+<pre><code>sudo apt-get install hfsprogs hfsplus
+</code></pre>
+<p>Create the following directory:</p>
+<pre><code>sudo mkdir -p /media/tm
+</code></pre>
+<p>Modify the permissions of the directory with this command:</p>
+<pre><code>sudo chown pi:pi /media/tm
+</code></pre>
+<p>Configure Pi to mount drive on start up.</p>
+<p>Find your drives UUID (Universally Unique Identifier) with this command:</p>
+<p><img src="/img/finding-uuid.png" alt="Finding UUID"></p>
+<p>Modify your fstab file to automatically mount your external drive on boot-up:</p>
+<pre><code>sudo nano /etc/fstab
+</code></pre>
+<p><img src="/img/fstab.png" alt="fstab"></p>
+<p>The line you want to add will look like this. Feel free to copy, paste, and modify with your UUID.</p>
+<pre><code>UUID=&quot;abc68498-4ff7-3e78-8131-4982b8dcc1aa&quot; /media/tm hfsplus force,rw,user,auto 0 0
+</code></pre>
+<p><strong>! BE CAREFUL !</strong></p>
+<p>Make sure you enter this correctly, as messing up here and not realizing will corrupt your fstab file and if you reboot before correcting it, your pi will not boot correctly. In the event of this, you&rsquo;ll have to edit your fstab file from another Linux system to fix your mistake.</p>
+<p>Test that your drive mounts correctly after this modification:</p>
+<pre><code>sudo mount -a
+</code></pre>
+<p>If you don&rsquo;t get an error here, then you&rsquo;re set.</p>
+<p>Install Netatalk:</p>
+<p>Use the following command to install all the dependencies you need at once</p>
+<p><code>sudo aptitude install build-essential libevent-dev libssl-dev libgcrypt11-dev libkrb5-dev libpam0g-dev libwrap0-dev libdb-dev libtdb-dev default-libmysqlclient-dev avahi-daemon libavahi-client-dev libacl1-dev libldap2-dev libcrack2-dev systemtap-sdt-dev libdbus-1-dev libdbus-glib-1-dev libglib2.0-dev libio-socket-inet6-perl tracker libtracker-sparql-1.0-dev libtracker-miner-1.0-dev</code></p>
+<p>Download the latest version of <a href="http://netatalk.sourceforge.net/">Netatalk</a> by making sure you have the correct version number with the following command</p>
+<pre><code>wget http://prdownloads.sourceforge.net/netatalk/netatalk-3.1.11.tar.gz
+</code></pre>
+<p>Unpack the file:</p>
+<pre><code>tar -xf netatalk-3.1.11.tar.gz
+</code></pre>
+<p>Switch to the new folder created, and run this command to configure Netatalk&rsquo;s settings:</p>
+<pre><code>./configure \
+--with-init-style=debian-systemd \
+--without-libevent \
+--without-tdb \
+--with-cracklib \
+--enable-krbV-uam \
+--with-pam-confdir=/etc/pam.d \
+--with-dbus-daemon=/usr/bin/dbus-daemon \
+--with-dbus-sysconf-dir=/etc/dbus-1/system.d \
+--with-tracker-pkgconfig-version=1.0
+</code></pre>
+<p>You are now going to build the source in this folder. This takes a little while.</p>
+<pre><code>make
+</code></pre>
+<p>and install</p>
+<pre><code>sudo make install
+</code></pre>
+<p>Ensure it&rsquo;s running with this command:</p>
+<pre><code>netatalk -V
+</code></pre>
+<p>We&rsquo;ve now got to configure Netatalk</p>
+<pre><code>sudo nano /etc/nsswitch.conf
+</code></pre>
+<p>To get your Time Machine drive to show up in Finder&rsquo;s sidebar you&rsquo;ll need to add this to the line that begins with &lsquo;hosts&rsquo;:</p>
+<pre><code>mdns4 mdns
+</code></pre>
+<p><img src="/img/nsswitchconf.png" alt="nsswitchconf"></p>
+<p>Edit apfd.service</p>
+<pre><code>sudo nano /etc/avahi/services/afpd.service
+</code></pre>
+<p>and add this block of text to the file:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; standalone='no'?&gt;&lt;!--*-nxml-*--&gt;
+&lt;!DOCTYPE service-group SYSTEM &quot;avahi-service.dtd&quot;&gt;
+&lt;service-group&gt;
+    &lt;name replace-wildcards=&quot;yes&quot;&gt;%h&lt;/name&gt;
+    &lt;service&gt;
+        &lt;type&gt;_afpovertcp._tcp&lt;/type&gt;
+        &lt;port&gt;548&lt;/port&gt;
+    &lt;/service&gt;
+    &lt;service&gt;
+        &lt;type&gt;_device-info._tcp&lt;/type&gt;
+        &lt;port&gt;0&lt;/port&gt;
+        &lt;txt-record&gt;model=TimeCapsule&lt;/txt-record&gt;
+    &lt;/service&gt;
+&lt;/service-group&gt;
+</code></pre>
+<p>Now set up your external drive as a network share.</p>
+<pre><code>sudo nano /usr/local/etc/afp.conf
+</code></pre>
+<p>Change the two sections that start with [Global] and [My Time Machine Volume] to this text:</p>
+<pre><code>[Global]
+mimic model = TimeCapsule6,106
+
+[Time Machine]
+path = /media/tm
+time machine = yes
+</code></pre>
+<p>Now you need to start the network services with these commands:</p>
+<pre><code>sudo service avahi-daemon start
+sudo service netatalk start
+</code></pre>
+<p><strong>! IMPORTANT !</strong></p>
+<p>Make sure you set your Pi to start these services every time your Pi boots with these commands:</p>
+<pre><code>sudo systemctl enable avahi-daemon
+sudo systemctl enable netatalk
+</code></pre>
+<p><em>We&rsquo;re almost done.</em></p>
+<p>Now hop on to your Mac and you should see your Pi under &lsquo;shared&rsquo; inside of Finder.</p>
+<p><img src="/img/finder1.png" alt="finder1"></p>
+<p>Hit &lsquo;Command + K&rsquo; to connect to the server with your Pi&rsquo;s IP address (which you should have given a static IP from your router)</p>
+<p><img src="/img/finder2.png" alt="finder2"></p>
+<p>Now go to System Preferences &gt; Time Machine and select the drive as your Time Machine backup.</p>
+<p><img src="/img/finder3.png" alt="finder3"></p>
+<p>And you&rsquo;re done!</p>
+<p><img src="/img/completedtimemachinesetup.png" alt="Completed Time Machine Setup"></p>
+<p>Now to get a bigger drive!</p>
+<h2 id="youve-now-got-a-fully-functional-raspberry-pi-time-machine">You&rsquo;ve now got a fully functional Raspberry Pi Time Machine</h2>
+<p>Thanks again to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for the initial guide I followed and for not getting upset over me borrowing your macOS screenshots.</p>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/macos/">macOS</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/pi/">pi</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/raspberry-pi/">raspberry-pi</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/time-machine/">time-machine</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/01/network-certification-and-resources/" data-tooltip="Network&#43; Certification and Resources" aria-label="PREVIOUS: Network&#43; Certification and Resources">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2017/09/27/decred-cryptocurrency/" data-tooltip="Decred &amp; Cryptocurrency" aria-label="NEXT: Decred &amp; Cryptocurrency">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2017/09/08/raspberry-pi-time-machine/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fa-facebook-official" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2017/09/08/raspberry-pi-time-machine/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2017/09/08/raspberry-pi-time-machine/" title="Share on Google&#43;" aria-label="Share on Google&#43;">
+          <i class="fa-google-plus" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2025 Scott Christian. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/01/network-certification-and-resources/" data-tooltip="Network&#43; Certification and Resources" aria-label="PREVIOUS: Network&#43; Certification and Resources">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2017/09/27/decred-cryptocurrency/" data-tooltip="Decred &amp; Cryptocurrency" aria-label="NEXT: Decred &amp; Cryptocurrency">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2017/09/08/raspberry-pi-time-machine/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fa-facebook-official" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2017/09/08/raspberry-pi-time-machine/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2017/09/08/raspberry-pi-time-machine/" title="Share on Google&#43;" aria-label="Share on Google&#43;">
+          <i class="fa-google-plus" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2017%2F09%2F08%2Fraspberry-pi-time-machine%2F" aria-label="Share on Facebook">
+          <i class="fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2017%2F09%2F08%2Fraspberry-pi-time-machine%2F" aria-label="Share on Twitter">
+          <i class="fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2017%2F09%2F08%2Fraspberry-pi-time-machine%2F" aria-label="Share on Google&#43;">
+          <i class="fa-google-plus" aria-hidden="true"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Scott Christian</h4>
+    
+      <div id="about-card-bio">Software Developer | Mobile Apps | Web Development</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Software Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Carrollton, TX
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('/img/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
