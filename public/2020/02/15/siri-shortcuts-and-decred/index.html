@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"\/",
+  "author": {
+    "@type": "Person",
+    "name": "Scott Christian",
+    
+    "image": "https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd"
+    
+  },
+  "name":"Scott R Christian",
+  "description":"You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a \u0026ldquo;Hey Siri..\u0026rdquo; command. Follow along with this post and you\u0026rsquo;ll not only have this capability, but you\u0026rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.",
+  "url":"\/2020\/02\/15\/siri-shortcuts-and-decred\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.126.1 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Scott Christian">
+<meta name="keywords" content="">
+<meta name="description" content="You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.">
+
+
+<meta property="og:description" content="You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Siri Shortcuts with Decred">
+<meta name="twitter:title" content="Use Siri Shortcuts with Decred">
+<meta property="og:url" content="/2020/02/15/siri-shortcuts-and-decred/">
+<meta property="twitter:url" content="/2020/02/15/siri-shortcuts-and-decred/">
+<meta property="og:site_name" content="Scott R Christian">
+<meta property="og:description" content="You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.">
+<meta name="twitter:description" content="You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-02-15T15:40:00">
+  
+  
+    <meta property="article:modified_time" content="2020-02-15T15:40:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Decred">
+    
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@scottrchristian">
+
+
+  <meta name="twitter:creator" content="@scottrchristian">
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=640">
+
+
+
+
+
+  <meta property="og:image" content="/img/dcr-shortcuts.jpg">
+  <meta property="twitter:image" content="/img/dcr-shortcuts.jpg">
+
+
+    <title>Use Siri Shortcuts with Decred</title>
+
+    <link rel="icon" href="/favicon.ico">
+    
+
+    
+
+    <link rel="canonical" href="/2020/02/15/siri-shortcuts-and-decred/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fas fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/" aria-label="Go to homepage">Scott R Christian</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about" aria-label="Open the link: /#about">
+    
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Scott Christian</h4>
+        
+          <h5 class="sidebar-profile-bio">Software Developer | Mobile Apps | Web Development</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/" title="Home">
+    
+      <i class="sidebar-button-icon far fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories" title="Categories">
+    
+      <i class="sidebar-button-icon far fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags" title="Tags">
+    
+      <i class="sidebar-button-icon far fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives" title="Archives">
+    
+      <i class="sidebar-button-icon far fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/#about" title="About">
+    
+      <i class="sidebar-button-icon far fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/dezryth" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/3403391/dezryth" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon far fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Use Siri Shortcuts with Decred
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2020-02-15T15:40:00Z">
+        
+  February 15, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/decred">Decred</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p><img src="/img/dcr-shortcuts.jpg" alt="DCR and Shortcuts"></p>
+<p>You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH. If this sounds too complicated, it&rsquo;s not! Reach out for help or do a little googling.</p>
+<p>tl;dr - We&rsquo;re going to be creating a simple script using Python, allowing SSH connections from your phone to your server, and setting up a Siri shortcut to run the script. I&rsquo;m not going into super nitty gritty details. Learning to teach yourself will take you far in this world!</p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="full-node-with-the-latest-version-of-decred-software">Full node with the latest version of Decred software</h3>
+<ul>
+<li>I&rsquo;m assuming you&rsquo;re using a linux distro to run your node. If not you may need to do a little extra googling to figure out how to modify steps here to your needs.</li>
+<li>If you aren&rsquo;t running your own full node, I highly suggest you start. If your DCR is controlled by a third party or you don&rsquo;t control your keys, you&rsquo;re opening yourself up to losing your Decred in the event of a breach.</li>
+<li>(Your software doesn&rsquo;t truly need to be the latest version, but you should keep it updated!)</li>
+</ul>
+<h3 id="iphone-with-static-ip-address">iPhone with static IP address</h3>
+<ul>
+<li>This tutorial can be done with an Android phone, but I specifically cover how to use Siri Shortcuts with an iPhone to run the scripts on your full node. If you don&rsquo;t know how to assign a static IP address, I recommend this <a href="https://www.howtogeek.com/184310/ask-htg-should-i-be-setting-static-ip-addresses-on-my-router/">guide</a> from howtogeek.com, which tends to offer comprehensive guides for neat stuff like this in an easily comprehensible way.</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<h3 id="1-the-script-on-the-server">1. The Script on the Server</h3>
+<p>Create a file on your server at <code>/home/yourusername</code>, which should be the first directory you find yourself in immediately after logging in. Call it <code>balance.py</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pprint <span style="color:#f92672">import</span> pprint
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jdata <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>stdin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(jdata)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#34;Your balance is &#34;</span> <span style="color:#f92672">+</span> str(round(data[<span style="color:#e6db74">&#34;cumulativetotal&#34;</span>], <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; DCR&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jdata<span style="color:#f92672">.</span>close()
+</span></span></code></pre></div><p>What this script does is take the json data piped into it (with the command you will see later) and print a human readable string: &ldquo;Your balance is X DCR&rdquo;.</p>
+<h3 id="2-the-security">2. The Security</h3>
+<p>Go set up the static address assignment for your phone with the guide from the requirements section. You will need your phones MAC address.</p>
+<p>We only want to allow ssh connections from IPs we specifically trust on our network to our full node.</p>
+<p>If you&rsquo;re using a linux distro, firewall rules are simple with ufw. Use this <a href="https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands#allow-incoming-ssh-from-specific-ip-address-or-subnet">guide</a> to enable your phone to connect over SSH by allowing its IP address, which should not change because you&rsquo;ve set up your router to assign your phone a static IP address when it&rsquo;s on your network.</p>
+<h3 id="3-the-siri-shortcut">3. The Siri Shortcut</h3>
+<p>With Shortcuts, Apple has allowed some power-user functionality that can really extend the utility of your phone. The shortcut we are creating here is very simple. Add a &lsquo;Run Script over SSH&rsquo; step, and follow it up with a &lsquo;Notification&rsquo; step.</p>
+<p>In your script step, populate the name of your server, your username and password, and the command to run your script:</p>
+<p><code>dcrctl --wallet getbalance | python balance.py</code></p>
+<p><img src="/img/shortcut-1.jpg" alt="Script Step"></p>
+<p>In your notification step, you pass in the Shell Script Result from the previous step as your variable. You can then set your Title for the notification.</p>
+<p><img src="/img/shortcut-2.jpg" alt="Notification Step"></p>
+<p>You&rsquo;re done! Now try running it and tweak whatever settings to your hearts content. When you run it, you should see something similar to below:</p>
+<p><img src="/img/shortcut-notification.jpg" alt="Woohoo!"></p>
+<h2 id="no-need-to-stop-here">No need to stop here</h2>
+<p>You&rsquo;ve learned everything you need to create some advanced features accessible to you conveniently. Maybe you&rsquo;ll decide to figure out how to make this shortcut work from anywhere in the world. Create more scripts for different tasks. You can even return information for things completely unrelated to Decred if you want, though I&rsquo;d recommend using a separate server. Do you frequently pay a particular address? You could script it and make it simple to issue your sendtoaddress command with a button press. You are running your own bank account, in a sense. You can build yourself utilities to bring the convenience you get from your fiat banking account apps, and then share the source with the world to enable more people to take back control of their personal finances.</p>
+<p>Just keep in mind, the security of your server is important, and you want to be very conscious of any security trade-offs you make for convenience.</p>
+<hr>
+<p>Now that you&rsquo;re done with this, give your grandparents a call. You know they&rsquo;d appreciate it! I am bad with this myself. Staying in touch with family is important.
+Check out the app <a href="https://uphabit.com/">Uphabit</a> to set reminders to stay in touch with the important relationships in your life. They didn&rsquo;t pay me to mention this, but I use the free version of their app, so figured I&rsquo;d give them a shout-out.</p>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2020/03/15/dezryth-proposal-updates/" data-tooltip="Dezryth Proposal Updates" aria-label="NEXT: Dezryth Proposal Updates">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2020/01/21/dezryth-2018-prior-work/" data-tooltip="Contractor Dezryth - 2018 Prior Work" aria-label="PREVIOUS: Contractor Dezryth - 2018 Prior Work">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/02/15/siri-shortcuts-and-decred/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/02/15/siri-shortcuts-and-decred/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2025 Scott Christian. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2020/03/15/dezryth-proposal-updates/" data-tooltip="Dezryth Proposal Updates" aria-label="NEXT: Dezryth Proposal Updates">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2020/01/21/dezryth-2018-prior-work/" data-tooltip="Contractor Dezryth - 2018 Prior Work" aria-label="PREVIOUS: Contractor Dezryth - 2018 Prior Work">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/02/15/siri-shortcuts-and-decred/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/02/15/siri-shortcuts-and-decred/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2020%2F02%2F15%2Fsiri-shortcuts-and-decred%2F" aria-label="Share on Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2020%2F02%2F15%2Fsiri-shortcuts-and-decred%2F" aria-label="Share on Twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/79d4a00e278f3381e35b81453b936fdd?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Scott Christian</h4>
+    
+      <div id="about-card-bio">Software Developer | Mobile Apps | Web Development</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Software Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Carrollton, TX
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('/img/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

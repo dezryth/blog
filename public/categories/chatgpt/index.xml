@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chatgpt on Scott R Christian</title>
+    <link>/categories/chatgpt/</link>
+    <description>Recent content in Chatgpt on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2024 00:59:13 +0000</lastBuildDate>
+    <atom:link href="/categories/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This is a test</title>
+      <link>/2025/06/19/this-is-a-test/</link>
+      <pubDate>Thu, 30 May 2024 00:59:13 +0000</pubDate>
+      <guid>/2025/06/19/this-is-a-test/</guid>
+      <description>It&amp;rsquo;s late. And I haven&amp;rsquo;t posted in years.&#xA;But this is a test. I asked ChatGPT to create me a script to make creating blog posts simpler. I gave it an example markdown file of one of my old posts and told it what it should prompt me for. At first it was just a script, but then it became a GUI, and then it became a GUI with a &amp;ldquo;Configure Settings button so I could provide an author name and the directory path to export posts to.</description>
+    </item>
+  </channel>
+</rss>

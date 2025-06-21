@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Scott R Christian</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jun 2025 11:34:56 +0000</lastBuildDate>
+    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Updates to My Blog Post Generator</title>
+      <link>/2025/06/20/new-updates-to-my-blog-post-generator/</link>
+      <pubDate>Thu, 19 Jun 2025 11:34:56 +0000</pubDate>
+      <guid>/2025/06/20/new-updates-to-my-blog-post-generator/</guid>
+      <description>Hey everyone! I&amp;rsquo;m excited to share updates to my blog post generator tool, a personal project I&amp;rsquo;ve been tinkering with to streamline my blogging process. You&amp;rsquo;ll find some other potentially helpful random utils in that repo. As someone who wants to blog more consistently to share my coding journey and boost my career, I’ve been pouring love into this tool to make it more practical and user-friendly. Here&amp;rsquo;s what&amp;rsquo;s new in the latest iteration!</description>
+    </item>
+  </channel>
+</rss>
