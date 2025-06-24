@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Scott R Christian</title>
+    <link>/tags/sql/</link>
+    <description>Recent content in SQL on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 13:38:45 +0000</lastBuildDate>
+    <atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL – The Differences in Joins</title>
+      <link>/2017/10/04/sql-the-differences-in-joins/</link>
+      <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
+      <guid>/2017/10/04/sql-the-differences-in-joins/</guid>
+      <description>The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;rsquo;s SQL Server. For the longest time I&amp;rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
+    </item>
+  </channel>
+</rss>

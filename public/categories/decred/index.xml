@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decred on Scott R Christian</title>
+    <link>/categories/decred/</link>
+    <description>Recent content in Decred on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Mar 2020 16:16:00 +0000</lastBuildDate>
+    <atom:link href="/categories/decred/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dezryth Proposal Updates</title>
+      <link>/2020/03/15/dezryth-proposal-updates/</link>
+      <pubDate>Sun, 15 Mar 2020 16:16:00 +0000</pubDate>
+      <guid>/2020/03/15/dezryth-proposal-updates/</guid>
+      <description>My proposal passed with 76.3% approval! 🎉&#xA;I promised transparency with my proposal and I intend to update this post with insight into the work over the months and a picture of the invoice sent to Decred&amp;rsquo;s CMS system each month. This will be updated over time. Please bear with me as the format and level of description may fluctuate, and keep in mind that this level of disclosure to the public is rare.</description>
+    </item>
+    <item>
+      <title>Use Siri Shortcuts with Decred</title>
+      <link>/2020/02/15/siri-shortcuts-and-decred/</link>
+      <pubDate>Sat, 15 Feb 2020 15:40:00 +0000</pubDate>
+      <guid>/2020/02/15/siri-shortcuts-and-decred/</guid>
+      <description>You are a savvy cryptocurrency user. You want a convenient way to check your balance or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or a &amp;ldquo;Hey Siri..&amp;rdquo; command. Follow along with this post and you&amp;rsquo;ll not only have this capability, but you&amp;rsquo;ll be equipped to get creative and do all sorts of impressive things with Siri Shortcuts and running scripts over SSH.</description>
+    </item>
+    <item>
+      <title>Contractor Dezryth - 2018 Prior Work</title>
+      <link>/2020/01/21/dezryth-2018-prior-work/</link>
+      <pubDate>Tue, 21 Jan 2020 20:05:00 +0000</pubDate>
+      <guid>/2020/01/21/dezryth-2018-prior-work/</guid>
+      <description>I&amp;rsquo;ve put together some evidence of prior work for review for my proposal on Decred&amp;rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.&#xA;You can view my proposal here.&#xA;Overview Facebook Management Guidelines I want to whip the page into better shape and increase engagement. We&amp;rsquo;ve got metrics to compare to competitor pages, and there&amp;rsquo;s no reason we shouldn&amp;rsquo;t beat them at being one of the most compelling cryptocurrency pages to follow.</description>
+    </item>
+  </channel>
+</rss>

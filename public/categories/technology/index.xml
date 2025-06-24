@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Scott R Christian</title>
+    <link>/categories/technology/</link>
+    <description>Recent content in Technology on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2024 00:59:13 +0000</lastBuildDate>
+    <atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This is a test</title>
+      <link>/2025/06/19/this-is-a-test/</link>
+      <pubDate>Thu, 30 May 2024 00:59:13 +0000</pubDate>
+      <guid>/2025/06/19/this-is-a-test/</guid>
+      <description>It&amp;rsquo;s late. And I haven&amp;rsquo;t posted in years.&#xA;But this is a test. I asked ChatGPT to create me a script to make creating blog posts simpler. I gave it an example markdown file of one of my old posts and told it what it should prompt me for. At first it was just a script, but then it became a GUI, and then it became a GUI with a &amp;ldquo;Configure Settings button so I could provide an author name and the directory path to export posts to.</description>
+    </item>
+    <item>
+      <title>EZRaffle – An Open Source Raffle Application</title>
+      <link>/2018/09/21/ezraffle-an-open-source-raffle-application/</link>
+      <pubDate>Fri, 21 Sep 2018 18:31:16 +0000</pubDate>
+      <guid>/2018/09/21/ezraffle-an-open-source-raffle-application/</guid>
+      <description>I would like to share that I&amp;rsquo;ve recently uploaded an application I wrote to my GitHub account that can be used to administer raffles. No longer will you have to hand-fill hundreds upon hundreds of tickets for your raffles! EZRaffle will insert as many entries as an entrant is entitled to along with their information. Upon submission, the entrant will optionally be sent an email confirming their entries.&#xA;It&amp;rsquo;s written in C# and uses a light-weight SQLite database.</description>
+    </item>
+    <item>
+      <title>SQL – The Differences in Joins</title>
+      <link>/2017/10/04/sql-the-differences-in-joins/</link>
+      <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
+      <guid>/2017/10/04/sql-the-differences-in-joins/</guid>
+      <description>The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;rsquo;s SQL Server. For the longest time I&amp;rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
+    </item>
+    <item>
+      <title>Decred &amp; Cryptocurrency</title>
+      <link>/2017/09/27/decred-cryptocurrency/</link>
+      <pubDate>Wed, 27 Sep 2017 06:22:03 +0000</pubDate>
+      <guid>/2017/09/27/decred-cryptocurrency/</guid>
+      <description>Recently I&amp;rsquo;ve gotten more involved in the Decred community. I&amp;rsquo;ll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I&amp;rsquo;ve seen in the space, and having spoken with members of the development team personally, they&amp;rsquo;ve got great backers and it&amp;rsquo;s going to go far.&#xA;UPDATE:&#xA;In my opinion, three things make Decred the best cryptocurrency at the moment:</description>
+    </item>
+    <item>
+      <title>Network&#43; Certification and Resources</title>
+      <link>/2017/04/01/network-certification-and-resources/</link>
+      <pubDate>Sat, 01 Apr 2017 23:29:40 +0000</pubDate>
+      <guid>/2017/04/01/network-certification-and-resources/</guid>
+      <description>I am currently training for the Network+ certification offered by CompTia. It&amp;rsquo;s a vastly more interesting subject for me to review and familiarize myself with than A+ has been in the past. As for the moment I only have the money for one certification and I&amp;rsquo;ve decided to pursue this one first. CompTia Certifications&#xA;For anyone else interested in studying up for this or any other CompTia certifications, I highly recommend Professor Messer&amp;rsquo;s YouTube Channel, which can be found here.</description>
+    </item>
+    <item>
+      <title>Scripting</title>
+      <link>/2016/12/02/scripting/</link>
+      <pubDate>Fri, 02 Dec 2016 15:48:53 +0000</pubDate>
+      <guid>/2016/12/02/scripting/</guid>
+      <description>Scripting languages and command line interfaces is an area I&amp;rsquo;ve decided to focus on in 2016. I&amp;rsquo;m currently a part of an online course on Python with Udemy by Jose Portilla that I highly recommend. I&amp;rsquo;m also diving into Powershell at work to become more familiar with remote Azure AD management. Familiarity with Powershell scripting will make me much more powerful in my domain.&#xA;Over the weekend I decided to get a little more comfortable with the command line interface with my Mac.</description>
+    </item>
+    <item>
+      <title>Open Source Development</title>
+      <link>/2016/04/12/open-source-development/</link>
+      <pubDate>Wed, 13 Apr 2016 02:52:07 +0000</pubDate>
+      <guid>/2016/04/12/open-source-development/</guid>
+      <description>Something I&amp;rsquo;ve always wanted to do but have not as of yet, is to get involved in Open Source development. The biggest reason for being scared off was fear of being the new guy, or committing to a project and then being pigeonholed into something I&amp;rsquo;d find boring, such as writing documentation or quality assurance testing. Don&amp;rsquo;t get me wrong, I know this stuff is important. I&amp;rsquo;ve never tried either of these so it could be something I&amp;rsquo;d enjoy, but I really want to focus on new features instead of improving upon old code.</description>
+    </item>
+    <item>
+      <title>OS X</title>
+      <link>/2016/04/12/os-x/</link>
+      <pubDate>Tue, 12 Apr 2016 22:56:10 +0000</pubDate>
+      <guid>/2016/04/12/os-x/</guid>
+      <description>As most of you know, for most of my life I was very anti-Apple. The price difference between an Apple product and the rest of the competition struck me as insane. &amp;ldquo;I can get way better specs for that price!&amp;rdquo; I&amp;rsquo;d think to myself, if I wasn&amp;rsquo;t actively debating with someone.&#xA;This perception started to change when I got my first smartphone. It was a hand-me-down iPhone 3G from my father.</description>
+    </item>
+  </channel>
+</rss>

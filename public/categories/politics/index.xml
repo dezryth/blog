@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Politics on Scott R Christian</title>
+    <link>/categories/politics/</link>
+    <description>Recent content in Politics on Scott R Christian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Apr 2017 23:08:13 +0000</lastBuildDate>
+    <atom:link href="/categories/politics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Congress Passes Bill to Repeal Internet Privacy Rules</title>
+      <link>/2017/04/01/congress-passes-bill-to-repeal-internet-privacy-rules/</link>
+      <pubDate>Sat, 01 Apr 2017 23:08:13 +0000</pubDate>
+      <guid>/2017/04/01/congress-passes-bill-to-repeal-internet-privacy-rules/</guid>
+      <description>You may have heard. If you haven&amp;rsquo;t, then you&amp;rsquo;re about to. Which is exciting for you because not having heard is most likely what Congress was hoping for, for nefarious reasons.&#xA;Congress recently passed a bill to repeal the Federal Communication Commission&amp;rsquo;s privacy rules for Internet Service Providers (referred to as the common acronym ISPs). These rules never had the opportunity to go into effect, but they would have allowed the average consumer more control over how our ISPs use the data they collect on us.</description>
+    </item>
+  </channel>
+</rss>
