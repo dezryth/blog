@@ -13,7 +13,6 @@
 
 .DS_Store
 deploy.sh
-public/
 
 
 hugo-tranquilpeak-theme\CHANGELOG.md
