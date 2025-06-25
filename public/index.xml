@@ -6,8 +6,15 @@
     <description>Recent content on Scott R Christian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jun 2025 19:12:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 21:30:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Policy for Kana Flick and Mobile Applications by Scott R Christian</title>
+      <link>/privacy/</link>
+      <pubDate>Tue, 24 Jun 2025 21:30:00 +0000</pubDate>
+      <guid>/privacy/</guid>
+      <description>Introduction This Privacy Policy applies to Kana Flick! and all other mobile applications developed by Scott R Christian. I am committed to protecting your privacy. For any questions or concerns, please contact me at hello@scottrchristian.com.&#xA;Data Collection Our applications, including Kana Flick!, do not collect, store, or share any personal or sensitive user data. This includes, but is not limited to, your name, email address, location, device information, or usage data.</description>
+    </item>
     <item>
       <title>Configuring Azure DevOps Branch Policies to Enforce Pull Requests and Code Reviews</title>
       <link>/2025/06/20/configuring-azure-devops-branch-policies-to-enforce-pull-requests-and-code-reviews/</link>
